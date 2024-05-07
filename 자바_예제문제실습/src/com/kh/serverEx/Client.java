@@ -30,6 +30,10 @@ public class Client {
 		    //주최자에게 온 메세지 수신 후 출력
 		    String m = in.readLine();
 		    System.out.println("send seccess :"+m);
+		    
+		    //close 작성하기
+		    out.close();
+		    socket.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
